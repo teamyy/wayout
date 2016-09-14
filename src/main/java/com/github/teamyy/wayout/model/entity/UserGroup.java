@@ -23,7 +23,7 @@ public class UserGroup {
     @Column(name = "name", nullable = false, length = 32)
     private String name;
 
-    @Column(name = "name", nullable = true, columnDefinition = "TEXT")
+    @Column(name = "description", nullable = true, columnDefinition = "TEXT")
     private String description;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "userGroup")

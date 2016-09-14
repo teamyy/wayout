@@ -40,10 +40,10 @@ public class Feedback {
     private Date modifiedAt;
 
     @ManyToOne
-    @JoinColumn(name="article_id", nullable=false, updatable=false)
+    @JoinColumn(name="article_id", nullable=false, insertable = false, updatable=false)
     private Article article;
 
     @ManyToOne
-    @JoinColumn(name="user_id", nullable=false, updatable=false)
+    @JoinColumn(name="user_id", nullable=false, insertable = false, updatable=false)
     private User user;
 }

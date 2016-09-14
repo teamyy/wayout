@@ -45,7 +45,7 @@ public class User {
     private UserStatus status;
 
     @ManyToOne
-    @JoinColumn(name="user_group_id", nullable=false, updatable=false)
+    @JoinColumn(name="user_group_id", nullable=false, insertable = false, updatable=false)
     private UserGroup userGroup;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")

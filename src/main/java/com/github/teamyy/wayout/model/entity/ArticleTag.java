@@ -31,6 +31,6 @@ public class ArticleTag {
     private Date createdAt;
 
     @ManyToOne
-    @JoinColumn(name="article_id", nullable=false, updatable=false)
+    @JoinColumn(name="article_id", nullable=false, insertable = false, updatable=false)
     private Article article;
 }
