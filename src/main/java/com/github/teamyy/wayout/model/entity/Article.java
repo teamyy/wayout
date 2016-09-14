@@ -47,4 +47,16 @@ public class Article {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "article")
     private List<ArticleImage> articleImages;
 
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "article")
+    private List<ArticleTag> articleTags;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "article")
+    private List<Favorite> favorites;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "article")
+    private List<Feedback> feedbacks;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "article")
+    private List<Review> reviews;
+
 }
